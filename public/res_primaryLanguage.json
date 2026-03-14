@@ -1,118 +1,194 @@
 {
-    "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
-      "section_name": {
-        "about": "About me",
-        "projects": "Projects",
-        "skills": "Skills",
-        "experience": "Experience"
-      }
+  "basic_info": {
+    "description_header": "Hi",
+    "description": "👋 Full-stack developer with ~2 years of experience building scalable web applications using JavaScript ecosystems and modern backend technologies. Currently contributing to the VDO.AI platform at Z1 Tech, working with PHP, Laravel, Node.js, ClickHouse, Redis, and MySQL to build high-performance backend systems and real-time features. Passionate about solving complex engineering problems, optimizing APIs and databases, and building reliable products that scale. Thank you 💜",
+    "section_name": {
+      "about": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "experience": "Experience",
+      "education": "Education"
     },
-    "projects": [
-      {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
-        "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
-        ],
-        "url": "",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
-            "name": "React"
-          },
-          {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
-          }
-        ]
-      },
-      {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
-        "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      }
-    ],
-    "experience": [
-      {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
-      }
-    ]
-  }
+    "resume": "https://drive.google.com/your-resume-link"
+  },
+  "projects": [
+    {
+      "title": "Shotkut",
+      "startDate": "2023",
+      "description": [
+        "Built a full-stack stock media marketplace using the MERN stack (MongoDB, Express, React, Node.js) with responsive and user-friendly UI.",
+        "Developed features for stock photos, videos, and assets browsing with advanced search, filters, and categories to enhance user experience.",
+        "Implemented secure authentication & authorization (JWT, bcrypt) for user accounts and contributor profiles.",
+        "Integrated payment gateway to support purchasing and subscription models for stock footage."
+      ],
+      "images": [
+        "images/portfolio/animal-shelter/p1.jpg",
+        "images/portfolio/animal-shelter/p2.jpg"
+      ],
+      "url": "https://shotkut.com",
+      "github": "https://github.com/PKSharma96/Shotkut",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        }
+      ]
+    },
+    {
+      "title": "MIS Application",
+      "startDate": "2024",
+      "description": [
+        "Built two MIS applications with React.js that automated passenger flight cancellations post check-in.",
+        "Reduced manual processing and enhanced airport service efficiency through automation."
+      ],
+      "images": [
+        "images/portfolio/adventure/p1.jpg",
+        "images/portfolio/adventure/p2.jpg"
+      ],
+      "url": "",
+      "github": "",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-bootstrap-plain",
+          "name": "Bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "OMDB Movie App",
+      "startDate": "2020",
+      "description": [
+        "Developed a movie information app in React.js using React Router for smooth navigation.",
+        "Integrated the free OMDB API to fetch real-time film details such as titles, genres, and ratings.",
+        "Implemented a responsive layout with Bootstrap, ensuring compatibility across mobile and desktop devices."
+      ],
+      "images": [
+        "images/portfolio/photography/p1.jpg",
+        "images/portfolio/photography/p2.jpg"
+      ],
+      "url": "https://pksharma96.github.io/OMDB-Movie-App/",
+      "github": "https://github.com/PKSharma96/OMDB-Movie-App",
+      "technologies": [
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-bootstrap-plain",
+          "name": "Bootstrap"
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Maxworth Electronic Systems Pvt. Ltd.",
+      "title": "Junior Software Developer(Trainee)",
+      "years": "March 2024 - June 2024",
+      "location": "New Delhi, India",
+      "mainTech": [
+        "React.js"
+      ],
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MS SQL Server",
+        "JavaScript",
+        "Bootstrap"
+      ]
+    },
+    {
+      "company": "Maxworth Electronic Systems Pvt. Ltd.",
+      "title": "Junior Software Developer",
+      "years": "June 2024 - April 2025",
+      "location": "New Delhi, India",
+      "mainTech": [
+        "React.js",
+        "MS SQL Server"
+      ],
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MS SQL Server",
+        "JavaScript",
+        "Bootstrap",
+        "NodeMailer",
+        "JWT",
+        "GIT"
+      ]
+    },
+    {
+      "company": "Z1 Tech",
+      "title": "Full Stack Developer",
+      "years": "April 2025 - Present",
+      "location": "Gurgaon, India",
+      "mainTech": [
+        "React.js",
+        "Laravel"
+      ],
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MySQL",
+        "phpMyAdmin",
+        "Redis",
+        "ClickHouse",
+        "GIT",
+        "Laravel",
+        "PHP",
+        "Mailtrap",
+        "Bitbucket",
+        "Linux"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech",
+      "school": "Your College Name",
+      "board": "Your University Name",
+      "subject": "Computer Science & Engineering",
+      "years": "2020 - 2024"
+    },
+    {
+      "degree": "Intermediate (12th)",
+      "school": "Your School Name",
+      "board": "Your Board Name",
+      "subject": "Physics, Chemistry, Maths",
+      "years": "2018 - 2020"
+    },
+    {
+      "degree": "High School (10th)",
+      "school": "Your School Name",
+      "board": "Your Board Name",
+      "subject": "General Subjects",
+      "years": "2016 - 2018"
+    }
+  ]
+}

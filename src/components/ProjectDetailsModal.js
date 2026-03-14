@@ -92,8 +92,31 @@ class ProjectDetailsModal extends Component {
                   ></i>
                 </a>
               ) : null}
+              {this.props.data.github ? (
+                <a
+                  href={this.props.data.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-href"
+                >
+                  <i
+                    className="fab fa-github"
+                    style={{ marginLeft: "10px" }}
+                  ></i>
+                </a>
+              ) : null}
             </h3>
-            <p className="modal-description">{description}</p>
+            <div className="modal-description" style={{ textAlign: "left" }}>
+              {Array.isArray(description) ? (
+                <ul style={{ listStyleType: "disc", paddingLeft: "1.5em" }}>
+                  {description.map((bullet, i) => (
+                    <li key={i} style={{ marginBottom: "8px" }}>{bullet}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{description}</p>
+              )}
+            </div>
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>

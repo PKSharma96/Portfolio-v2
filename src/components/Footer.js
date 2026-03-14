@@ -16,11 +16,11 @@ class Footer extends Component {
 
     return (
       <footer>
-        <div className="col-md-12">
-          <div className="social-links">{networks}</div>
+        <div className="col-md-12 text-right pr-5">
+          <div className="social-links" style={{ textAlign: 'right' }}>{networks}</div>
 
-          <div className="copyright py-4 text-center">
-            <div className="container">
+          <div className="copyright py-4">
+            <div className="container" style={{ textAlign: 'right', maxWidth: '100%' }}>
               <small>
                 Copyright &copy;{" "}
                 {this.props.sharedBasicInfo

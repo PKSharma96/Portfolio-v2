@@ -18,30 +18,54 @@ class Projects extends Component {
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;
-      var projects = this.props.resumeProjects.map(function (projects) {
+      var projects = this.props.resumeProjects.map(function (project) {
         return (
           <div
-            className="col-sm-12 col-md-6 col-lg-4"
-            key={projects.title}
-            style={{ cursor: "pointer" }}
+            className="col-sm-12 col-md-6 col-lg-4 mb-4"
+            key={project.title}
           >
-            <span className="portfolio-item d-block">
-              <div className="foto" onClick={() => detailsModalShow(projects)}>
-                <div>
-                  <img
-                    src={projects.images[0]}
-                    alt="projectImages"
-                    height="230"
-                    style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
-                  />
-                  <span className="project-date">{projects.startDate}</span>
-                  <br />
-                  <p className="project-title-settings mt-3">
-                    {projects.title}
-                  </p>
+            <div className="project-card" onClick={() => detailsModalShow(project)}>
+              <div className="project-image-container">
+                <img
+                  src={project.images[0]}
+                  alt={project.title}
+                />
+              </div>
+              <div className="project-content">
+                <p className="project-title-settings">
+                  {project.title}
+                </p>
+                <div className="project-description-bullets">
+                  <ul>
+                    {Array.isArray(project.description) ?
+                      project.description.map((bullet, i) => (
+                        <li key={i}>{bullet}</li>
+                      )) :
+                      <li>{project.description}</li>
+                    }
+                  </ul>
+                </div>
+                <div className="project-footer">
+                  <div className="project-icons-container">
+                    {project.technologies && project.technologies.slice(0, 4).map((tech, i) => (
+                      <i key={i} className={tech.class} title={tech.name}></i>
+                    ))}
+                  </div>
+                  <div className="project-links">
+                    {project.url && (
+                      <a href={project.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                        <i className="fas fa-external-link-alt"></i>
+                      </a>
+                    )}
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                        <i className="fab fa-github"></i>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </span>
+            </div>
           </div>
         );
       });

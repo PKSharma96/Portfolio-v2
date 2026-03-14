@@ -56,6 +56,13 @@ class Experience extends Component {
             >
               {work.company}
             </h4>
+            <div
+              className="vertical-timeline-element-subtitle"
+              style={{ textAlign: "left", marginTop: "5px", color: "#6c757d", fontSize: "0.9em" }}
+            >
+              <i className="fas fa-map-marker-alt mr-2"></i>
+              {work.location}
+            </div>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );
