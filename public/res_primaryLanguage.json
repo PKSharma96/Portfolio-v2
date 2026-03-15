@@ -9,7 +9,7 @@
       "experience": "Experience",
       "education": "Education"
     },
-    "resume": "https://drive.google.com/your-resume-link"
+    "resume": "https://drive.google.com/file/d/1hKfC0k57NYRQb3qvvVK2VFo-Z7G1Winy/view?usp=share_link"
   },
   "projects": [
     {
@@ -22,11 +22,10 @@
         "Integrated payment gateway to support purchasing and subscription models for stock footage."
       ],
       "images": [
-        "images/portfolio/animal-shelter/p1.jpg",
-        "images/portfolio/animal-shelter/p2.jpg"
+        "images/portfolio/shotkut.png"
       ],
-      "url": "https://shotkut.com",
-      "github": "https://github.com/PKSharma96/Shotkut",
+      "url": "https://www.shotkut.com/?page=1",
+      "github": "",
       "technologies": [
         {
           "class": "devicon-react-original",
@@ -47,15 +46,16 @@
       ]
     },
     {
-      "title": "MIS Application",
+      "title": "MIS Application (Enterprise)",
       "startDate": "2024",
       "description": [
-        "Built two MIS applications with React.js that automated passenger flight cancellations post check-in.",
-        "Reduced manual processing and enhanced airport service efficiency through automation."
+        "Architected and developed two sophisticated Management Information Systems (MIS) currently utilized at major airports.",
+        "Automated the passenger flight cancellation process post check-in, significantly reducing ground service response times.",
+        "Engineered internal enterprise tools that enhanced airport service efficiency through smart automation and real-time data processing.",
+        "Note: As this is a proprietary enterprise project developed for internal corporate use, public links and source code are restricted."
       ],
       "images": [
-        "images/portfolio/adventure/p1.jpg",
-        "images/portfolio/adventure/p2.jpg"
+        "images/portfolio/mis.png"
       ],
       "url": "",
       "github": "",
@@ -78,16 +78,15 @@
       "title": "OMDB Movie App",
       "startDate": "2020",
       "description": [
-        "Developed a movie information app in React.js using React Router for smooth navigation.",
-        "Integrated the free OMDB API to fetch real-time film details such as titles, genres, and ratings.",
-        "Implemented a responsive layout with Bootstrap, ensuring compatibility across mobile and desktop devices."
+        "Developed a robust movie discovery platform using React.js and dynamic routing for seamless user transitions.",
+        "Integrated the Open Movie Database (OMDB) API to provide real-time cinema details, ratings, and high-quality poster assets.",
+        "Optimized the interface with a mobile-first responsive design, ensuring a high-performance experience across all screen sizes."
       ],
       "images": [
-        "images/portfolio/photography/p1.jpg",
-        "images/portfolio/photography/p2.jpg"
+        "images/portfolio/omdb.png"
       ],
-      "url": "https://pksharma96.github.io/OMDB-Movie-App/",
-      "github": "https://github.com/PKSharma96/OMDB-Movie-App",
+      "url": "https://omdb-rho.vercel.app",
+      "github": "https://github.com/PKSharma96/OMDB",
       "technologies": [
         {
           "class": "devicon-react-original",
@@ -170,25 +169,28 @@
   ],
   "education": [
     {
-      "degree": "B.Tech",
-      "school": "Your College Name",
-      "board": "Your University Name",
+      "degree": "Bachelor of Technology",
+      "school": "GL Bajaj Institute of Technology And Management",
+      "board": "AKTU",
       "subject": "Computer Science & Engineering",
-      "years": "2020 - 2024"
+      "years": "2020 - 2024",
+      "logo": "https://cdn.brandfetch.io/idogIXsWXk/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1758608069436"
     },
     {
-      "degree": "Intermediate (12th)",
-      "school": "Your School Name",
-      "board": "Your Board Name",
-      "subject": "Physics, Chemistry, Maths",
-      "years": "2018 - 2020"
+      "degree": "Intermediate",
+      "school": "Basubaral Saraswati Vihar",
+      "board": "CBSE",
+      "subject": "Physics, Chemistry, Mathematics",
+      "years": "2019",
+      "logo": "https://basubaral.com/images/logo.jpeg"
     },
     {
-      "degree": "High School (10th)",
-      "school": "Your School Name",
-      "board": "Your Board Name",
+      "degree": "High School",
+      "school": "Basubaral Saraswati Vihar",
+      "board": "CBSE",
       "subject": "General Subjects",
-      "years": "2016 - 2018"
+      "years": "2017",
+      "logo": "https://basubaral.com/images/logo.jpeg"
     }
   ]
 }

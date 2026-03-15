@@ -6,15 +6,30 @@ class Education extends Component {
             var sectionName = this.props.resumeBasicInfo.section_name.education;
             var education = this.props.resumeEducation.map(function (edu, i) {
                 return (
-                    <div className="col-md-12 mx-auto" key={i}>
-                        <div className="card mb-3" style={{ textAlign: "left", borderRadius: "12px", border: "none", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" }}>
-                            <div className="card-body">
-                                <h3 className="card-title" style={{ fontSize: "1.5rem", fontWeight: "700", color: "#333" }}>{edu.degree}</h3>
-                                <h4 className="card-subtitle mb-2 text-muted" style={{ fontSize: "1.1rem" }}>{edu.school}</h4>
-                                <div style={{ fontSize: "0.95rem", color: "#666" }}>
-                                    <p className="mb-1"><strong>Board/University:</strong> {edu.board}</p>
-                                    {edu.subject && <p className="mb-1"><strong>Subject/Branch:</strong> {edu.subject}</p>}
-                                    <p className="mb-0"><strong>Year:</strong> {edu.years}</p>
+                    <div className="col-md-10 mx-auto" key={i}>
+                        <div className="education-card">
+                            <div className="education-logo-container">
+                                {edu.logo ? (
+                                    <img src={edu.logo} alt={edu.school} onError={(e) => { e.target.onerror = null; e.target.src = "https://cdn-icons-png.flaticon.com/512/2602/2602414.png" }} />
+                                ) : (
+                                    <div className="no-logo">
+                                        <i className="fas fa-university"></i>
+                                    </div>
+                                )}
+                            </div>
+                            <div className="education-details">
+                                <div className="degree">{edu.degree}</div>
+                                <div className="school">{edu.school}</div>
+                                <div className="info">
+                                    <strong>University/Board:</strong> {edu.board}
+                                </div>
+                                {edu.subject && (
+                                    <div className="info">
+                                        <strong>Subject/Branch:</strong> {edu.subject}
+                                    </div>
+                                )}
+                                <div className="info">
+                                    <strong>Duration:</strong> {edu.years}
                                 </div>
                             </div>
                         </div>

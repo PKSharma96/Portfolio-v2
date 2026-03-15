@@ -27,7 +27,7 @@ class Projects extends Component {
             <div className="project-card" onClick={() => detailsModalShow(project)}>
               <div className="project-image-container">
                 <img
-                  src={project.images[0]}
+                  src={process.env.PUBLIC_URL + "/" + project.images[0]}
                   alt={project.title}
                 />
               </div>

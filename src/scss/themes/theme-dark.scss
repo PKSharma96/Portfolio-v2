@@ -1,4 +1,4 @@
-body[data-theme="dark"] {  
+body[data-theme="dark"] {
 
    @import '../src/scss/dark-slider.scss';
 
@@ -11,8 +11,8 @@ body[data-theme="dark"] {
    }
 
    .header-icon {
-      color: #3C342C;
-      opacity: 0.8;
+      color: #AE944F;
+      opacity: 1;
    }
 
    .slider-image {
@@ -34,33 +34,59 @@ body[data-theme="dark"] {
 
    header {
       background-color: #494949;
+
       h1 {
          color: white;
       }
    }
 
    #about {
-      background-color: #7f7f7f;
+      background-color: #2c2c2c;
+
       h1 span {
          color: white;
       }
-      .polaroid span {
-         background:  #6d6d6d;
+
+      .polaroid {
+         background: #3c3c3c;
+         border: 1px solid #444;
+
+         .profile-img {
+            background: #444;
+         }
       }
-      .card {
-         background: #6d6d6d;
-         color: white;
+
+      .about-card {
+         background: #3c3c3c;
+         border: 1px solid #444;
+
+         .about-card-header {
+            background: #444;
+         }
+
+         .about-card-body {
+            .hello-text {
+               color: #fff;
+            }
+
+            .about-description {
+               color: #ddd;
+            }
+         }
       }
    }
 
    #portfolio {
       background: #5b5b5b;
+
       .section-title {
          color: white !important;
       }
+
       .foto div {
          background: #6d6d6d;
       }
+
       .project-title-settings {
          color: white;
       }
@@ -69,6 +95,7 @@ body[data-theme="dark"] {
    #resume {
       filter: brightness(80%);
       background: #5b5b5b;
+
       .section-title {
          color: white !important;
       }
@@ -89,7 +116,8 @@ body[data-theme="dark"] {
       .vertical-timeline-element-icon {
          background: #919191 !important;
       }
-      @media only screen and (max-width: 1169px) { 
+
+      @media only screen and (max-width: 1169px) {
          .vertical-timeline-element-date {
             color: black;
          }
